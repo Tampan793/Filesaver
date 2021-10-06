@@ -2,7 +2,7 @@
 Bot menghasilkan tautan yang dapat dibagikan di dalam telegram untuk video, photo, dokumen dan bisa berbagi secara grup. Lewat 20 media Anda tidak bisa mengirim sampai 1 menit selesai.
 <hr>
 
-<a href="https://heroku.com/deploy?template=https://github.com/">
+<a href="https://heroku.com/deploy?template=https://github.com/Tampan793/Filesaver">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 <br>
