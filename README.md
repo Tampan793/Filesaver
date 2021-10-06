@@ -19,7 +19,7 @@ Detail yang diperlukan.</br>
 <code>DOMAIN</code> - Sama dengan nama aplikasi yang Anda masukkan di Heroku.</br>
 <code>ADMIN</code> - ID Akun Anda (jika Anda tidak dapat menemukannya menggunakan bot seperti @getmyid_bot). <b>Jika ada tambahan ADMIN1 dan ADMIN2 tulis sesuai contoh yang ada di config Heroku dan tinggal kasih angka di belakangnya</b></br>
 <code>botUSERNAME</code> - Nama pengguna bot Anda tanpa '@'.</br>
-<code>DB_URL</code> - Buat akun di https://www.mongodb.com/cloud/atlas , nama database - RatuMediaFile ,nama collection - RatuFileBackup.Klik Connect dan pilih 'Hubungkan aplikasi Anda'.copy tautan dan ganti "< password >" dengan kata sandi pengguna yang memiliki akses ke DB dan ganti "myFirstDatabase" untuk "RatuMediaFile". Kalau mau ubah sesuai keinginan nama databasenya ada di folder config.</br>
+<code>DB_URL</code> - Buat akun di https://www.mongodb.com/cloud/atlas , nama database - MediaFile ,nama collection - FileBackup. Klik Connect dan pilih 'Hubungkan aplikasi Anda'.copy tautan dan ganti "< password >" dengan kata sandi pengguna yang memiliki akses ke DB dan ganti "myFirstDatabase" untuk "MediaFile". Kalau mau ubah sesuai keinginan nama databasenya ada di folder config.</br>
 <b>Tautan DB_URL</b>
 
     mongodb+srv://login:password@bot.qnbbq.mongodb.net/database?retryWrites=true&w=majority
