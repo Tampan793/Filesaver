@@ -1,7 +1,7 @@
 {
-	"name": "RatuFileSaver",
-	"description": "Ratu File Saver",
-	"repository": "https://github.com/BimoSora/RatuFileSaver",
+	"name": "Filesaver",
+	"description": "File Saver",
+	"repository": "https://github.com/Tampan793/Filesaver",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Heroku_logo.svg",
 	"keywords": ["telegram","filesaver","bot","nodejs"],
 	"env": {
@@ -47,7 +47,7 @@
         },
         "LINKCHANNEL":{
             "description": "Link channel grup masukkan disini dan ikuti format penulisan",
-            "value":"Gabung-https://t.me/test"
+            "value":"🤚🏻 Gabung Channel Update-https://t.me/test"
         }  
     },
 	"buildpacks": [
