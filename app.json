@@ -1,0 +1,58 @@
+{
+	"name": "RatuFileSaver",
+	"description": "Ratu File Saver",
+	"repository": "https://github.com/BimoSora/RatuFileSaver",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Heroku_logo.svg",
+	"keywords": ["telegram","filesaver","bot","nodejs"],
+	"env": {
+        "TOKEN": {
+            "description": "Token bot disediakan oleh  @botfather",
+            "value":""
+        },
+        "DOMAIN":{
+            "description": "Masukkan nama aplikasi Anda",
+            "value": ""
+        },
+        "DB_URL":{
+            "description": "Dapatkan url basis data mongodb dari https://www.mongodb.com/cloud/atlas with database name = mediaFile and collection name = fileBackup",
+            "value":""
+        },
+        "ADMIN":{
+            "description": "Masukkan id akun kamu",
+            "value":""
+        },
+        "BOTUSERNAME":{
+            "description": "Masukkan nama pengguna bot Anda tanpa @ dan harus huruf kecil",
+            "value":""
+        },
+        "LOG_CHANNEL":{
+            "description": "Buat saluran pribadi dan masukkan id saluran untuk memantau file dan mendapatkan data pengguna dan file",
+            "value":""
+        },
+        "CAPTIONLINK":{
+            "description": "Caption ketika link media yang dikirim di tekan",
+            "value":""
+        },
+        "WELCOMEJOINBOT":{
+            "description": "Masukkan pesan sebelum pengguna bergabung",
+            "value":""
+        },
+        "MESSAGEWELCOMEBOT":{
+            "description": "Masukkan pesan selamat datang ketika pengguna bergabung",
+            "value":""
+        },
+        "CHANNELJOIN":{
+            "description": "Masukkan ID channel grup untuk identifikasi bot bisa membaca pengguna yang masuk",
+            "value":""
+        },
+        "LINKCHANNEL":{
+            "description": "Link channel grup masukkan disini dan ikuti format penulisan",
+            "value":"Gabung-https://t.me/test"
+        }  
+    },
+	"buildpacks": [
+		{
+			"url": "heroku/nodejs"
+		}
+	]
+}
