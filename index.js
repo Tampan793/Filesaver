@@ -4,22 +4,22 @@ const rateLimit = require('telegraf-ratelimit')
 const crypto = require('crypto')
 const limitConfig = {
     window: 3000,
-    limit: 20,
+    limit: 30,
     onLimitExceeded: (ctx, next) => {
         if(ctx.chat.type == 'private') {
-            ctx.reply('Silakan menunggu 3 detik untuk mengirim, minimal 20 pesan sekali kirim')
+            ctx.reply('Silakan menunggu 3 detik untuk mengirim, minimal 10 pesan sekali kirim')
         }
     }
 }
 const mediaLimitConfig = {
     window: 60000,
-    limit: 20,
+    limit: 30,
     keyGenerator: function (ctx) {
       return ctx.from.id
     },
     onLimitExceeded: (ctx, next) => {
         if(ctx.chat.type == 'private') {
-            ctx.reply('Silakan menunggu 1 menit untuk mengirim, minimal 20 pesan sekali kirim')
+            ctx.reply('Silakan menunggu 1 menit untuk mengirim, minimal 10 pesan sekali kirim')
         }
     }
 }
@@ -368,7 +368,7 @@ bot.action('SRC',(ctx)=>{
         parse_mode: 'HTML',
         reply_markup:{
             inline_keyboard: [
-                [{text: `💿 HEROKU`, url: `https://github.com`},{text: `💿 VPS`, url: `https://github.com`}],
+                [{text: `💿 Heroku`, url: `https://github.com`},{text: `💿 Private Server`, url: `https://github.com`}],
                 [{text:'Kembali',callback_data:'STARTUP'}]
             ]
         }
