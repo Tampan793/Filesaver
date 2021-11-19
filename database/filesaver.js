@@ -106,7 +106,6 @@ module.exports={
     },
 
     //removing file with file_id
-
     removeFile:(fileId)=>{
         db.get().collection(collection.FILE_COLLECTION).removeOne({file_id:fileId})
     },
@@ -139,8 +138,8 @@ module.exports={
             })
         })
     },
-  
-  checkFile:(uniqueId)=>{
+
+    checkFile:(uniqueId)=>{
         return new Promise(async(resolve,reject)=>{
             await db.get().collection(collection.FILE_COLLECTION).findOne({uniqueId:uniqueId}).then((res)=>{
                 console.log(res);
