@@ -74,9 +74,6 @@ function messagelink(ctx){
     return `Kirimi Media Untuk Bot [ADMINS REQUIRED] ⛔.`;
 }
 function documentation(ctx){
-    var mykey = crypto.createDecipher('aes-128-cbc', 'mypassword');
-    var mystr = mykey.update('d59f19294f388d2ee23e350f913a84ba7abf661a3d2f09062ce5e927f0d644429d835186bec83190988e6941287f8ddce229e2f98ad520d6014ae1f21ffd4d71', 'hex', 'utf8')
-    mystr += mykey.final('utf8');
     return `🗣 Bot Menggunakan Bahasa\n<b>👁 Program:</b> Javascript \n<b>🔥 API Methode:</b> <a href='https://telegraf.js.org/'>Telegraf</a> \n<b>🌐 Support Helps:</b><a href='https://telegram.dog/xH4X0Rx'> Hubungi Dia </a>\n\n× 𝘓𝘶𝘤𝘺 𝘋 𝘟𝘦𝘣𝘦𝘤 ×`;
 }
 const url2 = process.env.LINKCHANNEL.split(/[\,-]+/);
