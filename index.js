@@ -396,7 +396,7 @@ bot.action('SRC',(ctx)=>{
         parse_mode: 'HTML',
         reply_markup:{
             inline_keyboard: [
-                [{text: `💿 HEROKU`, url: `https://bit.ly/3yA6IRA`},{text: `💿 KOMPUTER/VPS`, url: `https://bit.ly/38qaMsS`}],
+                [{text: `💿 HEROKU`, url: `https://github.com`},{text: `💿 LINUX/WINDOWS`, url: `https://github.com/`}],
                 [{text:'Kembali',callback_data:'STARTUP'}]
             ]
         }
