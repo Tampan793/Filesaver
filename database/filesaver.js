@@ -49,7 +49,6 @@ module.exports={
         })
     },
 
-
     getBan:()=>{
         return new Promise(async(resolve,reject)=>{
             db.get().collection(collection.BANNED_COLLECTION).find().toArray().then((res)=>{
@@ -61,6 +60,7 @@ module.exports={
 
     //updating user database by removing blocked users details from the database
 
+
     updateUser:(userId)=>{
         db.get().collection(collection.USER_COLLECTION).deleteOne({userId:userId}).then((res)=>{
             console.log('updated user database');
@@ -69,9 +69,9 @@ module.exports={
 
     //saving files to database
 
-    saveFile:(fileDetails)=>{
+    saveFile:(fileDetails1)=>{
         db.get().collection(collection.FILE_COLLECTION).createIndex({file_name:"text"})
-        db.get().collection(collection.FILE_COLLECTION).insertOne(fileDetails).then((res)=>{
+        db.get().collection(collection.FILE_COLLECTION).insertOne(fileDetails1).then((res)=>{
             console.log('file saved');
         })
     },
@@ -106,13 +106,13 @@ module.exports={
     },
 
     //removing file with file_id
-    removeFile:(fileId)=>{
-        db.get().collection(collection.FILE_COLLECTION).removeOne({file_id:fileId})
+    removeFile:(unique_Id)=>{
+        db.get().collection(collection.FILE_COLLECTION).removeOne({uniqueId:unique_Id})
     },
 
     //removing file with mediaId
     removeFileMedia:(media)=>{
-        db.get().collection(collection.FILE_COLLECTION).remove({mediaId:media})
+        db.get().collection(collection.FILE_COLLECTION).removeMany({mediaId:media})
     },
 
     //ban user with user ID
