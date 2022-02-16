@@ -1,7 +1,7 @@
 {
-	"name": "Filesaver",
+	"name": "RatuFileSaver",
 	"description": "File Saver",
-	"repository": "https://github.com/Tampan793/Filesaver",
+	"repository": "https://github.com/Tampan793/FileSaver",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Heroku_logo.svg",
 	"keywords": ["telegram","filesaver","bot","nodejs"],
 	"env": {
@@ -17,12 +17,12 @@
             "description": "Dapatkan url basis data mongodb dari https://www.mongodb.com/cloud/atlas with database name = mediaFile and collection name = fileBackup",
             "value":""
         },
-        "ADMIN":{
-            "description": "Masukkan id akun kamu",
-            "value":""
-        },
         "BOTUSERNAME":{
             "description": "Masukkan nama pengguna bot Anda tanpa @ dan harus huruf kecil",
+            "value":""
+        },
+        "ADMIN":{
+            "description": "Masukkan id Admin",
             "value":""
         },
         "LOG_CHANNEL":{
@@ -47,7 +47,7 @@
         },
         "LINKCHANNEL":{
             "description": "Link channel grup masukkan disini dan ikuti format penulisan",
-            "value":"🤚🏻 Gabung Channel Update-https://t.me/test"
+            "value":"Gabung-https://t.me/test"
         }  
     },
 	"buildpacks": [
