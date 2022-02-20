@@ -19,9 +19,6 @@ module.exports.botcommand = `<b>Berikut adalah beberapa perintah dan penggunaan 
 ~ Bagaimana cara kirim pesan ke pengguna dari grup.
 <b>/send</b> pesan. kirim pesan di grup.
 
-~ Bagaimana cara kirim pesan ke pengguna dari bot.
-<b>/sendchat</b> userID pesan. kirim ke pengguna melalui bot.
-
 <b>Cara menghapus file dari bot.</b>
 Anda dapat menghapus file 4 cara.
   ⚫ Hapus file individual dengan file_id.
