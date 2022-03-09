@@ -82,7 +82,7 @@ function messagebotnoaddgroup(ctx){
 function messagelink(ctx){
     return `Send bot videos, photos and documents.`;
 }
-function documentation(ctx){    
+function documentation(ctx){
     return `The bot was created using \n<b>Program:</b> Node JS \n<b>API:</b> <a href='https://telegraf.js.org/'>Telegraph</a> \n\n~ @Powdrs ~`;
 }
 const url2 = process.env.LINKCHANNEL.split(/[\,-]+/);
@@ -422,7 +422,7 @@ bot.action('SRC', async(ctx)=>{
         parse_mode: 'HTML',
         reply_markup:{
             inline_keyboard: [
-                [{text: `💿 WINDOWS`, url: `https://github.com/`},{text: `💿 VPS`, url: `https://github.com/`}],
+                [{text: `💿 HEROKU`, url: `https://github.com`},{text: `💿 KOMPUTER/VPS`, url: `https://github.com`}],
                 [{text:'Kembali',callback_data:'STARTUP'}]
             ]
         }
@@ -1252,7 +1252,7 @@ bot.on(['document', 'video', 'photo'], async(ctx,next) => {
                         })
                     }else{
                         await ctx.replyWithDocument(document.file_id, {
-                            chat_d: ctx.from.id,
+                            chat_id: ctx.chat.id,
                             caption: `${tag} \n<b>Name file:</b> ${file_name2}\n<b>Size:</b> ${document.file_size} B\n<b>File ID:</b> ${document.file_unique_id} ${mediaId} \n\nhttps://t.me/${process.env.BOTUSERNAME}?start=${document.file_unique_id} ${mediaId2}`,
                             parse_mode: 'HTML',
                             disable_web_page_preview: true,
@@ -1346,7 +1346,7 @@ bot.on(['document', 'video', 'photo'], async(ctx,next) => {
                         })
                     }else{
                         await ctx.replyWithVideo(video.file_id, {
-                            chat_d: ctx.from.id,
+                            chat_id: ctx.chat.id,
                             caption: `${tag} \n<b>Name file:</b> ${file_name2}\n<b>Size:</b> ${video.file_size} B\n<b>File ID:</b> ${video.file_unique_id} ${mediaId} \n\nhttps://t.me/${process.env.BOTUSERNAME}?start=${video.file_unique_id} ${mediaId2}`,
                             parse_mode: 'HTML',
                             disable_web_page_preview: true,
@@ -1440,7 +1440,7 @@ bot.on(['document', 'video', 'photo'], async(ctx,next) => {
                         })
                     }else{
                         await ctx.replyWithPhoto(photo.file_id, {
-                            chat_d: ctx.from.id,
+                            chat_id: ctx.chat.id,
                             caption: `${tag} \n<b>Name file:</b> ${file_name2}\n<b>Size:</b> ${photo.file_size} B\n<b>File ID:</b> ${photo.file_unique_id} ${mediaId} \n\nhttps://t.me/${process.env.BOTUSERNAME}?start=${photo.file_unique_id} ${mediaId2}`,
                             parse_mode: 'HTML',
                             disable_web_page_preview: true,
