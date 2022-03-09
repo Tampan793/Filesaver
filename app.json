@@ -1,7 +1,7 @@
 {
 	"name": "RatuFileSaver",
 	"description": "File Saver",
-	"repository": "https://github.com/Tampan793/FileSaver",
+	"repository": "https://github.com/Tampan793/Filesaver",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Heroku_logo.svg",
 	"keywords": ["telegram","filesaver","bot","nodejs"],
 	"env": {
